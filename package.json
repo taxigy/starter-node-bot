@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel -d build/ src/; git commit -a -m 'Build.'",
-    "start": "webpack index.js; node --harmony build/index.js"
+    "start": "node --harmony build/index.js"
   },
   "engines": {
     "node": ">=5.1.0"
