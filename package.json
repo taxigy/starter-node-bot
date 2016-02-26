@@ -1,10 +1,11 @@
 {
   "name": "starter-node-bot",
   "version": "0.0.1",
-  "description": "Vagabot loves Beep Book",
+  "description": "Vagabot loves Beep Boop",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "build": "babel -d build/ src/; git commit -a -m 'Build.'",
+    "start": "webpack index.js; node --harmony build/index.js"
   },
   "engines": {
     "node": ">=5.1.0"
@@ -26,5 +27,15 @@
   "homepage": "https://github.com/taxigy/starter-node-bot",
   "dependencies": {
     "botkit": "0.0.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.3",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "webpack": "^1.12.14"
+  },
+  "babel": {
+    "stage": 0
   }
 }
