@@ -1,26 +1,29 @@
 {
-  "name": "node-slack-bot",
-  "version": "1.0.0",
-  "description": "A sample Beep Boop Node.js Slackbot",
+  "name": "starter-node-bot",
+  "version": "0.0.1",
+  "description": "Vagabot loves Beep Book",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
+  "engines": {
+    "node": ">=5.1.0"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beepboophq/node-slack-bot.git"
+    "url": "git+https://github.com/taxigy/starter-node-bot.git"
   },
   "keywords": [
     "slackbot",
     "bot",
     "slack"
   ],
-  "author": "",
+  "author": "Rishat Muhametshin <rishat@specular.space>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/beepboophq/node-slack-bot/issues"
+    "url": "https://github.com/taxigy/starter-node-bot/issues"
   },
-  "homepage": "https://github.com/beepboophq/node-slack-bot#readme",
+  "homepage": "https://github.com/taxigy/starter-node-bot",
   "dependencies": {
     "botkit": "0.0.5"
   }
