@@ -4,7 +4,7 @@
   "description": "Vagabot loves Beep Boop",
   "main": "index.js",
   "scripts": {
-    "build": "babel -d build/ src/; git commit -a -m 'Build.'",
+    "build": "babel -d build/ src/",
     "start": "node --harmony build/index.js"
   },
   "engines": {
