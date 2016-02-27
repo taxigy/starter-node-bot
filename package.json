@@ -4,8 +4,8 @@
   "description": "Vagabot loves Beep Boop",
   "main": "index.js",
   "scripts": {
-    "build": "babel -d build/ src/",
-    "start": "node --harmony build/index.js"
+    "build": "babel -d ./ src/",
+    "start": "node index.js"
   },
   "engines": {
     "node": ">=5.1.0"
