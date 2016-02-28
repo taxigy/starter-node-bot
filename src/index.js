@@ -30,8 +30,7 @@ controller.hears(['hello', 'hi'], ['direct_mention'], (bot, message) => {
 });
 
 controller.hears(['hello', 'hi'], ['direct_message'], (bot, message) => {
-  bot.reply(message, 'Hello.');
-  bot.reply(message, 'It’s nice to talk to you directly.');
+  bot.reply(message, 'Helloooooooooooooooo.');
 });
 
 controller.hears('.*', ['mention'], (bot, message) => {
