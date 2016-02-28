@@ -17,11 +17,15 @@ module.exports = {
     path: path.join(__dirname, 'build'),
     filename: 'index.js'
   },
-  target: 'node',
-  loaders: [{
-    test: /\.js$/,
-    exclude: /node_modules/,
-    loaders: ['babel']
-  }],
+  module: {
+    loaders: [{
+      loader: 'babel-loader',
+      include: [path.resolve(__dirname, 'src')],
+      test: /\.js$/,
+      query: {
+        presets: ['es2015', 'stage-0']
+      }
+    }]
+  },
   externals: externals
 };

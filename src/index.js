@@ -26,7 +26,7 @@ controller.on('bot_channel_join', (bot, message) => {
 });
 
 controller.hears(['hello', 'hi'], ['direct_mention'], (bot, message) => {
-  bot.reply(message, 'Hello.');
+  bot.reply(message, 'Hello, %username%.');
 });
 
 controller.hears(['hello', 'hi'], ['direct_message'], (bot, message) => {

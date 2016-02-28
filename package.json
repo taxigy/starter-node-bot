@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel -d ./ src/",
-    "start": "node index.js"
+    "start": "webpack; node build/index.js"
   },
   "engines": {
     "node": ">=5.1.0"
