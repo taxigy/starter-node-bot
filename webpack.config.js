@@ -17,6 +17,7 @@ module.exports = {
     path: path.join(__dirname, 'build'),
     filename: 'index.js'
   },
+  target: 'node',
   module: {
     loaders: [{
       loader: 'babel-loader',
