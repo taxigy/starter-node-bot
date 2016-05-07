@@ -8,6 +8,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var SLACK_TOKEN = process.env.SLACK_TOKEN;
 
+
 if (!SLACK_TOKEN) {
   console.error('SLACK_TOKEN is required!');
   process.exit(1);
@@ -30,12 +31,11 @@ controller.on('bot_channel_join', function (bot, message) {
 });
 
 controller.hears(['hello', 'hi'], ['direct_mention'], function (bot, message) {
-  bot.reply(message, 'Hello.');
+  bot.reply(message, 'Hello, %username%.');
 });
 
 controller.hears(['hello', 'hi'], ['direct_message'], function (bot, message) {
-  bot.reply(message, 'Hello.');
-  bot.reply(message, 'It’s nice to talk to you directly.');
+  bot.reply(message, 'Helloooooooooooooooo.');
 });
 
 controller.hears('.*', ['mention'], function (bot, message) {
